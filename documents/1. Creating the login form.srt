@@ -1,0 +1,563 @@
+1
+00:00:00,610 --> 00:00:01,460
+Hi welcome back.
+
+2
+00:00:01,500 --> 00:00:03,310
+I hope you are really excited.
+
+3
+00:00:03,490 --> 00:00:08,500
+Well this section here we're going to be creating the log in functionalities of the CMOS is going to
+
+4
+00:00:08,500 --> 00:00:09,030
+be great.
+
+5
+00:00:09,030 --> 00:00:11,040
+We're going at a logging in right here.
+
+6
+00:00:11,040 --> 00:00:16,340
+We're going to process the form check the database for users or passwords and then depending on that.
+
+7
+00:00:16,530 --> 00:00:22,460
+So we're going to either redirect the user to the admin or redirect them back to index page.
+
+8
+00:00:22,470 --> 00:00:27,300
+Now before we go on I want to I just want to say congratulations because if you made it this far you
+
+9
+00:00:27,300 --> 00:00:30,180
+are different from 95 percent of the people out there.
+
+10
+00:00:30,330 --> 00:00:32,940
+A lot of people give up and they don't see it through the end.
+
+11
+00:00:32,940 --> 00:00:38,460
+If you see this through the end you're going to see the fruit of your hard work because right now what
+
+12
+00:00:38,460 --> 00:00:43,110
+you're doing is dedicating your time to something that is very valuable and is going to give you a lot
+
+13
+00:00:43,110 --> 00:00:44,700
+of things in the future.
+
+14
+00:00:44,700 --> 00:00:45,390
+Positive things.
+
+15
+00:00:45,390 --> 00:00:48,970
+Knowledge is power and what development can change your life.
+
+16
+00:00:48,990 --> 00:00:53,220
+But anyway let me not keep going about that I get too poetic anyways.
+
+17
+00:00:53,340 --> 00:00:57,420
+So the first thing that we're going to be doing is creating the sidebar here right.
+
+18
+00:00:57,420 --> 00:01:00,320
+So again I'm super happy for you that you made it this far.
+
+19
+00:01:00,330 --> 00:01:01,860
+But we've got to keep going.
+
+20
+00:01:01,860 --> 00:01:02,300
+Right.
+
+21
+00:01:02,460 --> 00:01:04,170
+So let's go to the sidebar.
+
+22
+00:01:04,170 --> 00:01:08,920
+Let's go to the root directory on your see a mass and if you don't know where you are.
+
+23
+00:01:09,120 --> 00:01:10,020
+Let me give me one.
+
+24
+00:01:10,050 --> 00:01:16,160
+Give me one second let me take you back there just to make sure that we are on the same page.
+
+25
+00:01:16,160 --> 00:01:16,820
+All right.
+
+26
+00:01:16,860 --> 00:01:20,440
+So we're going to see a mass and you're going to be right here in the room when I say rude.
+
+27
+00:01:20,490 --> 00:01:21,600
+This is where you are.
+
+28
+00:01:21,720 --> 00:01:24,690
+And then we go to includes And we're going to get to sidebar OK.
+
+29
+00:01:25,050 --> 00:01:29,660
+So let me just take that off since we don't need it.
+
+30
+00:01:29,820 --> 00:01:30,450
+Right.
+
+31
+00:01:30,480 --> 00:01:34,070
+So we're going to go includes sidebar in here.
+
+32
+00:01:34,210 --> 00:01:38,820
+We're going to be building the little logo form that we need.
+
+33
+00:01:38,820 --> 00:01:39,470
+All right.
+
+34
+00:01:39,570 --> 00:01:42,540
+We're going to be doing this by copy and paste in this blog search.
+
+35
+00:01:42,540 --> 00:01:44,670
+We already got it right here right.
+
+36
+00:01:44,670 --> 00:01:45,020
+Why.
+
+37
+00:01:45,030 --> 00:01:51,900
+Why write all that code when we have the basic structure right here the markup so I'm going to call
+
+38
+00:01:51,900 --> 00:01:54,620
+this log in of course.
+
+39
+00:01:54,620 --> 00:01:55,130
+All right.
+
+40
+00:01:55,290 --> 00:01:58,820
+And now we've got to do a little couple of modifications here because this is going to be a logging
+
+41
+00:01:58,820 --> 00:01:59,780
+for form.
+
+42
+00:02:00,120 --> 00:02:06,710
+And we're going to take people we haven't build this page yet but we're going to take them to includes
+
+43
+00:02:06,870 --> 00:02:11,990
+the logging forums are going to be in site includes And it's going to be called Logan ph.
+
+44
+00:02:12,090 --> 00:02:17,130
+Of course the Met is going to be post form group is fine.
+
+45
+00:02:17,610 --> 00:02:24,360
+This input we need to change and we need to change the input to tell us find search.
+
+46
+00:02:24,360 --> 00:02:33,260
+No this is going to be the user name and we're probably going to put a placeholder here let's just add
+
+47
+00:02:33,330 --> 00:02:34,980
+a placeholder.
+
+48
+00:02:34,980 --> 00:02:39,200
+I'm going to put this form all the way to the left there so that way you can see what I'm doing.
+
+49
+00:02:39,570 --> 00:02:40,820
+So let's put a placeholder.
+
+50
+00:02:40,830 --> 00:02:44,250
+I'm going to do it right after the class right here.
+
+51
+00:02:44,620 --> 00:02:55,120
+Placeholder and I'm just going to say enter name enter user name user name.
+
+52
+00:02:55,430 --> 00:02:56,440
+All right.
+
+53
+00:02:56,670 --> 00:03:04,090
+And this is for input group input group is too big.
+
+54
+00:03:04,110 --> 00:03:07,320
+All right so I'm just going to take this button right here.
+
+55
+00:03:07,340 --> 00:03:08,890
+Search.
+
+56
+00:03:09,090 --> 00:03:10,860
+So I'm just going to take that out.
+
+57
+00:03:11,250 --> 00:03:12,560
+All right.
+
+58
+00:03:13,170 --> 00:03:15,290
+And see how that looks right now.
+
+59
+00:03:15,330 --> 00:03:20,590
+Let's go to the front of the Silas refresh it and we see that we have this blocked search.
+
+60
+00:03:20,700 --> 00:03:24,360
+We've got to change the title and we need to change a couple of things so they then put there used to
+
+61
+00:03:24,360 --> 00:03:26,220
+make it look nice.
+
+62
+00:03:26,220 --> 00:03:27,300
+All right.
+
+63
+00:03:27,300 --> 00:03:27,800
+All right.
+
+64
+00:03:27,930 --> 00:03:33,990
+So remember that all this classes this is a framework that I'm using called Bootstrap and I have another
+
+65
+00:03:33,990 --> 00:03:40,150
+course on that Bootstrap which shows you how to make a responsive Wes's applications very easily with
+
+66
+00:03:40,150 --> 00:03:40,890
+this framework.
+
+67
+00:03:40,890 --> 00:03:41,520
+Right.
+
+68
+00:03:41,910 --> 00:03:44,230
+But we already have the framework installed.
+
+69
+00:03:44,250 --> 00:03:46,750
+So we just got to make some of this work.
+
+70
+00:03:46,800 --> 00:03:49,130
+So so we have this input here.
+
+71
+00:03:49,140 --> 00:03:53,260
+Let's do another input group right.
+
+72
+00:03:53,310 --> 00:03:58,660
+Let's call this save that let's call it Logan.
+
+73
+00:03:59,480 --> 00:04:03,050
+All right so this type is going to be password array
+
+74
+00:04:06,300 --> 00:04:18,290
+password and names are going to be password to placeholder is going to be password into password.
+
+75
+00:04:18,330 --> 00:04:20,310
+All right.
+
+76
+00:04:20,600 --> 00:04:20,940
+All right.
+
+77
+00:04:20,940 --> 00:04:24,730
+So let's let's check that out and see how it looks.
+
+78
+00:04:25,000 --> 00:04:27,460
+And we need to change the input group.
+
+79
+00:04:27,570 --> 00:04:32,960
+We need to give this whole thing a a form group that's a whole.
+
+80
+00:04:33,000 --> 00:04:37,180
+That's the whole reason why this is actually not looking good.
+
+81
+00:04:37,230 --> 00:04:42,950
+Because it has something called the input group and we don't we don't need to improve Garou right here.
+
+82
+00:04:43,540 --> 00:04:43,800
+All right.
+
+83
+00:04:43,800 --> 00:04:47,040
+But anyway let's go back and check on this.
+
+84
+00:04:47,060 --> 00:04:51,390
+She looks all right.
+
+85
+00:04:51,420 --> 00:04:56,990
+Her eyes started to look a little better now but we still need to try to work it really good.
+
+86
+00:04:57,000 --> 00:04:57,550
+Right.
+
+87
+00:04:57,630 --> 00:05:05,370
+So now that we have this what we need to do is add I'm going to change this poor girl to one group right
+
+88
+00:05:05,370 --> 00:05:10,410
+here this class and let's see how that looks.
+
+89
+00:05:10,410 --> 00:05:17,010
+Now refresh now that stands all the way across OK that's why we won here on this one.
+
+90
+00:05:17,010 --> 00:05:17,430
+All right.
+
+91
+00:05:17,470 --> 00:05:20,140
+The one below we're going to do a little something a little different there.
+
+92
+00:05:20,160 --> 00:05:23,060
+All right now on top let's just leave it like that.
+
+93
+00:05:23,070 --> 00:05:23,680
+Right.
+
+94
+00:05:24,000 --> 00:05:30,120
+So on this one here just going to make this a little smaller so that I can work with it.
+
+95
+00:05:31,170 --> 00:05:36,180
+Here we can add a couple of things I don't want you to get to Los on on what I'm going to do right because
+
+96
+00:05:36,930 --> 00:05:43,260
+it might look a little bit that's for you but it's not just the little framework that I use and all
+
+97
+00:05:43,260 --> 00:05:46,560
+you have to do is basically copy what I'm doing right now.
+
+98
+00:05:46,560 --> 00:05:47,280
+All right.
+
+99
+00:05:47,380 --> 00:05:54,430
+So we're going to be adding a spam right here and say this one.
+
+100
+00:05:54,510 --> 00:05:56,610
+All right.
+
+101
+00:05:56,610 --> 00:06:02,200
+And the spam we're going to be adding a class of show you right now.
+
+102
+00:06:02,460 --> 00:06:09,850
+Class of input group Betty.
+
+103
+00:06:10,150 --> 00:06:10,710
+All right.
+
+104
+00:06:10,710 --> 00:06:16,150
+We're going to be what we want to do is we want to create a button right here on the right side.
+
+105
+00:06:16,510 --> 00:06:19,000
+It's going to be stuck to this field right here.
+
+106
+00:06:18,990 --> 00:06:19,670
+Right.
+
+107
+00:06:19,950 --> 00:06:23,580
+And again this is using a framework.
+
+108
+00:06:23,580 --> 00:06:27,460
+All right so now that we have that we're going to we need to create a button right here.
+
+109
+00:06:27,840 --> 00:06:34,230
+And of course we need to put a couple things on the button first we need to give the button a class
+
+110
+00:06:35,250 --> 00:06:37,030
+so to make it look good.
+
+111
+00:06:37,180 --> 00:06:38,830
+Couple of classes actually.
+
+112
+00:06:39,100 --> 00:06:42,370
+So VTAM and then VTM primary.
+
+113
+00:06:42,550 --> 00:06:48,720
+Right then we need to give a little attribute because we need to know that we need to receive this somewhere
+
+114
+00:06:48,720 --> 00:06:55,510
+else so we're going to give it in that review of and then the name Actually you to give it a value of
+
+115
+00:06:55,520 --> 00:06:56,870
+luck getting it right.
+
+116
+00:06:57,450 --> 00:07:00,770
+And this is going to be a types of Mitt.
+
+117
+00:07:00,840 --> 00:07:06,510
+Make sure you put that type in there make sure that we know is a button there right.
+
+118
+00:07:06,840 --> 00:07:15,020
+All right so that's that's all we've got to do for this one here and that's it.
+
+119
+00:07:15,080 --> 00:07:15,630
+That's about it.
+
+120
+00:07:15,630 --> 00:07:20,860
+That's what we need for this and a little spam right here another issue another spam.
+
+121
+00:07:21,060 --> 00:07:29,510
+And let's give this a class of actually this and let's not even class let's just say call submit submit
+
+122
+00:07:29,520 --> 00:07:30,260
+that's fine.
+
+123
+00:07:30,270 --> 00:07:33,730
+I think we're good to go we are golden.
+
+124
+00:07:34,200 --> 00:07:37,160
+See how that looks now.
+
+125
+00:07:37,260 --> 00:07:39,230
+All right refresh perfect.
+
+126
+00:07:39,240 --> 00:07:39,970
+Look at that.
+
+127
+00:07:40,140 --> 00:07:42,200
+Looking good right.
+
+128
+00:07:43,380 --> 00:07:46,700
+And we just did that with a little with this framework.
+
+129
+00:07:46,710 --> 00:07:52,280
+Now if you want to do that VSC says doing it yourself you know that takes a long time to write with
+
+130
+00:07:52,280 --> 00:07:54,350
+it it's like within two minutes right.
+
+131
+00:07:54,600 --> 00:07:54,960
+All right.
+
+132
+00:07:54,960 --> 00:07:55,500
+Perfect.
+
+133
+00:07:55,500 --> 00:08:01,700
+So now we have the form here and we are sending it to the include.
+
+134
+00:08:01,710 --> 00:08:04,710
+So when we click on it let's just check it out click on it.
+
+135
+00:08:04,710 --> 00:08:07,140
+He sends us to enclose Logan up here.
+
+136
+00:08:07,350 --> 00:08:13,290
+So we are done creating the form in front of it in front of the site on the next lecture we're going
+
+137
+00:08:13,290 --> 00:08:19,740
+to be continuing this and creating the rest of the day for that we need to process some of these BHB
+
+138
+00:08:19,740 --> 00:08:25,080
+that's going to come some of these values that are going on that are going through this form right here.
+
+139
+00:08:25,080 --> 00:08:25,590
+Right.
+
+140
+00:08:25,800 --> 00:08:30,040
+So anyway thank you so much for watching this lecture and I see you the next one.
+
+141
+00:08:30,090 --> 00:08:31,630
+Take care.
